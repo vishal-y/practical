@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic:wdth@98.9&family=Poppins:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    background: rgb(237, 223, 223);
+}
+
+
+#sun{
+    display: none;
+}
+
+
+#everything{
+    display: grid;
+}
+
+#all{
+    overflow: hidden;
+}
+
+#home{
+    height:100vh;
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)); */
+}
+
+
+nav {
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    height:10vh;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    font-size:1.8rem;
+    font-weight:500;
+    padding-left: 2%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+    transition: all .1s ease;
+    border:2px solid ;
+}
+
+.title{
+    margin-left:5%;
+    text-align: center;
+}
+
+.title h1{
+    font-weight:600;
+    color: #FF5A60;
+}
+
+
+.heart{
+    height:2.6rem;
+    width:2.6rem;
+    background-color: red;
+    margin-top:8%;
+    margin-left:45%;
+    transform: rotate(-45deg);
+    cursor: none;
+}
+
+.heart::before{
+    content: " ";
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: red;
+    position: absolute;
+    top:-42%;
+    right:-.5%;
+    border-radius: 50%;
+    cursor: none;
+
+}
+.heart::after{
+    content: " ";
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: red;
+    position: absolute;
+    left:45%;
+    border-radius: 50%;
+    cursor: none;
+}
+
+.heart:hover{
+    animation: 1s pump infinite ;
+    cursor: none;
+}
+
+
+@keyframes pump {
+
+    0% {
+        transform: rotate(-45deg)
+         scale(0.8);
+    }
+
+    10% {
+        transform: rotate(-45deg)
+         scale(0.9);
+    }
+
+    15% {
+        transform: rotate(-45deg)
+         scale(1);
+    }
+
+   
+
+    50% {
+        transform: rotate(-45deg)
+         scale(0.8);
+    }
+
+    
+
+    100% {
+        transform: rotate(-45deg)
+         scale(0.8);
+    }
+
+
+}
+
+
+.beachsvg{
+    margin-top:15%;
+    margin-left:15%;
+    height:70%;
+    width:70%;
+}
+
+.titlebtn{
+    border: 1px solid blue;
+    width:32%;
+    padding:2%;
+    border-radius: 8px;
+    top: 6vh;
+    text-align: center;
+    margin-left:35%;
+    transition: all .2s ease;
+}
+
+.titlebtn a{
+    text-decoration: none;
+}
+
+.titlebtn:hover{
+    border: 1px solid #FF5A60;
+    background-color: #FF5A60;
+}
+
+
+.topbtn{
+    border: 1px solid #FF5A60;
+    border-radius:6px;
+    padding: .3% .6% .2% .6%;
+    color: black;
+    background-color:#FF5A60;
+}
+
+.topbtn:hover{
+    color: white;
+}
+
+
+#arrowright{
+    position: relative;
+}
+
+
+#gotop i{
+    padding:1%;
+    background-color: #FF5A60;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* *****************************************
+home end here 
+*****************************************
+ */
+ 
+
+
+
+ 
+#aboutyou{
+     padding-top:4%;
+     height: 100vh;
+}
+
+#aboutyou h2{
+    text-align: center;
+    position: relative;
+    top:5%;
+    color: #FF5A60;
+    -webkit-text-stroke: 1px;
+}
+
+
+.info{
+    margin-top: 5%;
+}
+
+.infoform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geninfo{
+    border-radius: 6px;
+    border: 1px solid black;
+    width:8%;
+    margin: 1%;
+    padding: .2%;
+        padding-left: 8px;
+}
+
+#religion{
+    width:8%;
+    margin: 1%;
+    padding: .2%;
+    border-radius: 4px;    
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+#ageinfo{
+    width: 7%;
+    margin: 1%;
+    padding: .2%;
+    border-radius: 4px;    
+    border-radius: 6px;
+    border: 1px solid black;
+    padding-left: 8px;
+}
+
+
+#search{
+    width: 10%;
+    border-radius: 6px;
+    border: 1px solid;
+    margin-top:3%;
+    margin-left:45%;
+    background-color: transparent;
+    padding: 4px;
+    color: blue;
+    border:1px solid blue; 
+    transition: all .2s ease-in;
+}
+
+#search:hover{
+    background: #FF5A60;
+    color: white;
+    border: none;
+}
+
+
+
+
+
+
+
+/* *****************************************
+about end here 
+*****************************************
+ */
+
+
+
+
+
+
+
+
+
+
+#us{
+    height: 100%;
+}
+
+#us h5{
+    text-align: center;
+    color: #FF5A60;
+}
+
+#us p{
+   text-align: center;
+}
+
+
+.ustop{
+    height:30vh;
+}
+
+.ustop h3{
+    margin-top:8%;
+    text-align: center;
+    color: #FF5A60;
+}
+
+.line{
+    height: 1.5%;
+    width: 5%;
+    background-color: #FF5A60;
+    color:#FF5A60;
+    border-radius:6px;
+    margin-left: 48%;
+    transition: all .3s ease-in;
+}
+
+.line:hover{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.us_a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.us_a:hover{
+    color: #FF5A60;
+}
+
+
+.usmain{
+    display: grid;
+    grid-template-columns:repeat(auto-fill , minmax(300px , 30%));
+    grid-gap:3%;
+    margin-left:4%;
+}
+
+
+
+.usleft{
+    border-radius:12px;
+    padding: 4%;
+}
+
+#us_icon{
+    margin-left:37%;
+    padding: 4% 4% 4% 5%;
+}
+
+.uscenter{
+    margin-top:1%;
+    border-radius:12px;
+}
+
+.usright{
+    margin-top: 3%;
+    border-radius:12px;
+}
+
+
+/* *****************************************
+about end here 
+*****************************************
+ */
+
+#testimonial{
+    height: 100%;
+}
+
+
+#test{
+margin-left: 48%;
+}
+
+.fa-quote-left{
+    float: left;
+    color: #FF5A60;
+}
+
+
+.content{
+    margin-left: 35%;
+    width: 30%;
+    padding:2%;
+    border: 1px solid #FF5A60;
+    box-shadow: 10px 20px 25px rgba(0,0,0,0.25);
+    border-radius:12px;
+    text-align: center;
+    margin-bottom:5%;
+}
+
+
+.fa-quote-right{
+    position: relative;
+    left:65%;
+    top: -3.4rem;
+    color: #FF5A60;
+}
+
+
+.swiper img{
+    height:52px;
+    width:52px;
+    border-radius: 50%;
+}
+
+.swiper-pagination{
+    margin-left: 1%;
+}
+
+
+
+
+
+
+
+/* *****************************************
+testomonal end here 
+*****************************************
+ */
+
+
+#app{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,50%));
+}
+
+
+.appphoto{
+    display: flex;
+    justify-content: center;
+}
+
+.appphoto img{
+    height: 75%;
+    width: 35%;
+    margin-top: 12%;
+    margin-left: 15%;
+}
+
+.appheading{
+    color:#FF5A60 ;
+
+}
+
+
+.appinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.appinfo h3{
+    padding: 2% 0 2% 0;
+}
+
+.appinfoimg img{
+    padding: 2% 0 2% 0;
+    width: 22%;
+}
+
+/* *****************************************
+app end here 
+*****************************************
+ */
+
+
+#foot{
+    height: 100vh;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #111;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      display: block;
+      font-size: 20px;
+    }
+
+
+    #foot{
+        height:22vh;
+    }
+
+}
+
+

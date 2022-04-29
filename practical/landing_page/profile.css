@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic:wdth@98.9&family=Poppins:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+#sun{
+    display: none;
+}
+
+#profiles{
+    height:100%;
+}
+
+
+#pro{
+    text-align: center;
+    color:transparent;
+    font-weight:800;
+    -webkit-text-stroke: 1px #FF5A60;
+    margin-right:3%;
+}
+
+#monster{
+    position: relative;
+    top:3.5rem;
+    margin-left:55%;
+}
+
+.prestyle{
+    height:100vh;
+    width:10vh;
+}
+
+#uppercard{
+    height:43rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+#card_first{
+    position:relative;
+    top: -10rem;
+    left:24rem;
+    background-color: white;
+    border: 1px solid white;
+    height:25.8rem;
+    width:28%;
+    color: black;
+    border-radius:8px;
+    box-shadow: 10px 20px 25px rgba(0,0,0,0.25);
+}
+
+#card{
+    margin-top:10%;
+    background-color: white;
+    border: 1px solid white;
+    height:25.8rem;
+    width:28%;
+    color: black;
+    border-radius:8px;
+    box-shadow: 10px 20px 25px rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+
+.forimg{
+    position: relative;
+    top: 10%;
+    left:1%;
+}
+
+.profileimg{
+    height:192px;
+    width:193px;
+    border-radius: 50%;
+    margin-bottom:22%;
+}
+
+
+.info .name{
+    margin-top:6%;
+}
+
+.info .age{
+    margin-top: -10%;
+}
+
+.info .gender{
+    margin-top: -12%;
+}
+
+.icon{
+    display:flex;
+    margin-top:8%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.fa-message{
+    margin-left:40%;
+}
+
+.fa-heart{
+    margin-left:25%;
+    transition: 0.3s ease-in;
+}
+
+
+
+
+
+#back{
+    margin-top:60vh;
+    margin-left:28%;
+    border: 1px solid white;
+    border-radius: 50%;
+    height:5%;
+    width:2%;
+    background-color: #FF5A60;
+}
+
+#next{
+    margin-top:60vh;
+    margin-right: 28%;
+    border: 1px solid white;
+    height:5%;
+    border-radius: 50%;
+    width:2%;
+    background-color: #FF5A60;
+
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+
+    #card{
+        background-color: white;
+        border: 1px solid white;
+        height:50vh;
+        width:74%;
+        border-radius:8px;
+        box-shadow: 10px 20px 25px rgba(0,0,0,0.25);
+    }
+
+}
