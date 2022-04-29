@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic:wdth@98.9&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* background: linear-gradient(45deg,#8b51ff,#7a37ff); */
+    background-color: rgb(255,239,239);
+    overflow: hidden;
+}
+
+
+.container{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+#card{
+    position: relative;
+    top:20vh;
+    left: 20%;
+    background-color:white;
+    width: 30%;
+    border-radius:8px;
+    box-shadow: 10px 20px 25px rgba(0,0,0,0.25);
+}
+
+
+a{
+    color: #FF5A60;
+    text-decoration: none;
+    display:inline-block;
+}
+
+#side{
+    color: #FF5A60;
+    margin-left: 8%;
+    margin-bottom: 10%;
+}
+
+
+.supname{
+    border: 1px solid grey;
+    margin-bottom:5%;
+    margin-left: 8%;
+    width:40%;
+    border-radius: 4px;
+    padding-left:6px;
+}
+
+.lastname{
+    border: 1px solid grey;
+    margin-bottom:5%;
+    margin-left:3%;
+    width:40%;
+    border-radius: 4px;
+    padding-left:6px;
+}
+
+.suppass{
+    border: 1px solid grey;   
+    margin-bottom:2%;
+    margin-left: 8%;
+    width: 85%;
+    border-radius: 4px;
+    padding-left:6px;
+}
+
+.age{
+    border: 1px solid grey;   
+    margin-bottom:2%;
+    margin-left:8%;
+    width:24%;
+    border-radius: 4px;
+    padding-left:6px;
+
+}
+
+.email{
+    border: 1px solid grey;   
+    margin-bottom:2%;
+    margin-left: 8%;
+    width: 85%;
+    border-radius: 4px;
+    padding-left:6px;
+
+}
+
+.sinemail{
+    border: 1px solid grey;
+    margin-bottom:5%;
+    margin-left: 8%;
+    width: 85%;
+    border-radius: 4px;
+    padding-left:6px;
+}
+
+.sinpass{
+    border: 1px solid grey;   
+    margin-left: 8%;
+    width: 85%;
+    border-radius: 4px;
+    padding-left:6px;
+}
+
+.suppass2{
+    border: 1px solid grey;   
+    margin-bottom:5%;
+    margin-left: 8%;
+    width: 85%;
+    border-radius: 4px;
+    padding-left:6px;
+}
+
+
+.h5{
+    font-size:1rem;
+    padding:5%;
+    text-align: center;
+}
+
+
+.submitbtn{
+    background-color: #FF5A60;
+    color: white;
+    border-radius:4px;
+    outline: none;
+    border: none;
+    padding:2%;
+    width: 85%;
+    margin-left:8%;
+}
+
+.submitbtn:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+}
+
+.line{
+    height:1px;
+    width:80%;
+    margin-left:10%;
+    background-color: #FF5A60;
+}
+
+.right{
+    background:#FF5A60;
+    height:180vh;
+    width: 100%;
+    border-radius: 50%;
+    z-index:1;
+    position: absolute;
+    left:50%;
+}
+
+button{
+    color: #FF5A60;
+}
+
+.logup{
+    position:relative;
+    z-index:2;
+    color: white;
+    text-align: center;
+    margin-left:45%;
+    margin-top: 14%;
+}
+
+.sign{
+    width: 200%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 1.2%;
+}
+
+
+#text{
+    margin-left:10%;
+    text-align: center;
+    background-color: red;
+    width: 80%;
+    margin-top: 1%;
+    border-radius: 4px;
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+    #card{
+        position: absolute;
+        left:12%;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .logup{
+        display: none;
+    }
+
+}
+
+
+
+
